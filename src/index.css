@@ -1,1 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&display=swap');
+
+.App{
+  text-align: center;
+  height: 100vh;
+  background: #8D9EC0;
+}
+
+#navbar-links > ul > li {
+  display: inline;
+  padding-right: 40px;
+  padding-left: 40px;
+  text-decoration: none;
+}
+
+#navbar-links > ul > li > a, a:hover, a:focus {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar-container {
+  width: 100%;
+  background-color: #AAA9AD;
+  padding-top: 25px;
+  padding-bottom: 15px;
+  font-size: 25px;
+  color: black;
+  font-family: 'Carrois Gothic SC', sans-serif;
+}
+
+.text-blurbs{
+  width: 75%;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.text-blurbs-content{
+text-align: left;
+}
+
 

@@ -1,0 +1,24 @@
+import { Link } from 'react-router-dom';
+
+const About = () => {
+    return (
+        <div className="text-blurbs">
+            <h1>Who is Russell Monteith?</h1>
+            <p className="text-blurbs-content">
+                Russell is a Certified Public Accountant licensed in the State of New York. He has over 8 years of experience working as a
+                professional accountant. He graduated from Binghamton University with his Masters in Accounting in the Spring of 2013 and 
+                got his first job soon after. While working toward's his Masters, Russell passed all 4 parts of the CPA test 
+                before graduating. The CPA test is a grueling test which an average pass rate of 50%.
+
+                What else can Russell do? Russell is also a front end web developer. He has been learning how to build web applications since
+                2020. Can Russell help your accounting practice build an internal web application? Yes, he can. Please see the links page to
+                see Russell's GitHub to see the projects Russell has completed in his spare time. <Link to="links">Links</Link>
+
+
+
+            </p>
+        </div>
+      );
+}
+ 
+export default About;
