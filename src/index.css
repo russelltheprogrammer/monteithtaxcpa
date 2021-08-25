@@ -5,6 +5,7 @@
   text-align: center;
   height: 100vh;
   background: #8D9EC0;
+  font-family: 'Roboto', sans-serif;
 }
 
 .navbar-links {
@@ -40,12 +41,39 @@
   align-items: center;
   margin: 0 auto;
   padding-top: 50px;
-  font-family: 'Roboto', sans-serif;
 }
 
 .text-blurbs-content{
 text-align: left;
 }
+
+.services-container {
+  width: 40%;
+  font-size: 25px;
+  margin: 0 auto;
+  padding-top: 50px;
+  text-align: center;
+  background-color: white;
+}
+
+.services-container > ul {
+  display: table;
+  margin: 0 auto;
+  text-align: left;
+  list-style-position: inside;
+ 
+}
+
+.tools-container{
+ top: 50%;
+ left: 0;
+ width: 100%;
+ text-align: center;
+ position: absolute;
+ font-size: 50px;
+ color: red;
+}
+
 
 
 

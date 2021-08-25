@@ -1,6 +1,6 @@
 const Services = () => {
     return ( 
-        <div>
+        <div className="services-container">
             <ul>
                 <li>Tax Preparation
                     <ul>
@@ -12,6 +12,10 @@ const Services = () => {
                         <li>Gift Tax</li>
                     </ul>
                 </li>
+                <li>Tax Planning</li>
+                <li>Tax Strategies</li>
+                <li>Tax Consulting</li>
+                <li>Accounting Firm Web Application Development Services</li>
             </ul>
         </div>
      );

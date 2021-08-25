@@ -1,7 +1,7 @@
 const Tools = () => {
     return ( 
-        <div>
-            Wow, looks at all these applications!
+        <div className="tools-container">
+            Stay tuned! This is still in progress!
         </div>
      );
 }
