@@ -9,6 +9,7 @@ import Tools from './Tools';
 import Links from './Links';
 import Contact from './Contact';
 import NotFound from './NotFound';
+import Footer from './Footer';
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
           </Route>
         </Switch>
       </div>
+      <Footer />
     </div>
     </Router>
   );

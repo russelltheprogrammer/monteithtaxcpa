@@ -6,24 +6,34 @@ const Navbar = () => {
     return ( 
         <div className="navbar-container">
             <nav className="navbar-nav">
-            <div id="navbar-links" className="navbar ms-auto">
+            {/* <div id="navbar-logo" className="navbar me-auto">
                 <ul>
                     <li>
+                    LOGO TO BE INSERTED
+                    </li>
+                </ul>
+            </div> */}
+            <div className="navbar ms-auto">
+                <ul>
+                    <li id="navbar-logo">
+                        LOGO TO BE INSERTED
+                    </li>
+                    <li className="navbar-links">
                         <Link to="/">Home</Link>
                     </li>
-                    <li>
+                    <li className="navbar-links">
                         <Link to="about">About</Link>
                     </li>
-                    <li>
+                    <li className="navbar-links">
                         <Link to="services">Services</Link>
                     </li>
-                    <li>
+                    <li className="navbar-links">
                         <Link to="tools">Tools</Link>
                     </li>
-                    <li>
+                    <li className="navbar-links">
                         <Link to="links">Links</Link>
                     </li>
-                    <li>
+                    <li className="navbar-links">
                         <Link to="contact">Contact</Link>
                     </li>
                 </ul>
