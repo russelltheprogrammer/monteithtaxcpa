@@ -20,7 +20,7 @@ const About = () => {
                 Russell is also a front end web developer. He has been learning how to build web applications and websites since
                 2020. He built this entire website all by himself from scratch. Can Russell help your accounting practice build an internal web application? 
                 Yes, he can. Please see the <Link to="links">links page</Link> to
-                see Russell's GitHub to see the projects Russell has completed in his spare time.
+                see Russell's GitHub to see the projects that Russell has completed in his spare time.
                 <br/>
                 <br/>
                 A lot of people know how to do taxes and a lot of people know how to program websites but very few can do both.
