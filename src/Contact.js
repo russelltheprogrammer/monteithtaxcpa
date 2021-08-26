@@ -1,9 +1,11 @@
-import { useRef } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
 
 const Contact = () => {
 
-    // const reRef = useRef();
+const handleOnChange = (value) => {
+    console.log("Captcha value:", value);
+    // setState isVerified: true
+}
 
     return ( 
         <div>
@@ -29,11 +31,10 @@ const Contact = () => {
                 <br/>
                 <button type="submit">SUBMIT</button>
             </form>
-            {/* <ReCAPTCHA 
-                sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY} 
-                size="invisible"
-                ref={reRef}
-             /> */}
+            <ReCAPTCHA 
+              sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" //currently local token, need to replace with site token, how to link env?
+              onChange={handleOnChange}
+             />
             <div>
                 <h4>Contact Info</h4>
                 <p><a href="mailto:info@monteithtaxcpa.com">info@monteithtaxcpa.com</a>
@@ -46,3 +47,5 @@ const Contact = () => {
 }
  
 export default Contact;
+
+//disable submit button if not verified
