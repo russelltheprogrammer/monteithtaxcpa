@@ -70,5 +70,7 @@ const handleOnChange = (value) => {
  
 export default Contact;
 
+
+//footer and content of contact are not working, the content of contact is being overlapped by the footer. This needs to be fixed.
 //disable submit button if not verified
 //public site key for reCAPTCHA needs to be changed before launching website
