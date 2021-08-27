@@ -2,12 +2,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 
+.App{
+  height: 100vh;
+}
+
 body{
   text-align: center;
-  height: 100vh;
   background: #8D9EC0;
   font-family: 'Roboto', sans-serif;
   position: relative;
+  margin: 0;
+  display: grid;
+  overflow: auto;
 }
 
 .navbar-links {
