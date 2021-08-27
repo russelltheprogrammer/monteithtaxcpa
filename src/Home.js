@@ -6,6 +6,9 @@ const Home = () => {
             <p>
                 Please take a look around the website, you can contact Russell right away by 
                 clicking <a href="mailto:russell@monteithtaxcpa.com">HERE</a>.
+                <br/>
+                Contact Russell today for a free consultation!
+
             </p>
 
         </div>

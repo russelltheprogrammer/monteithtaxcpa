@@ -1,6 +1,6 @@
 const Services = () => {
     return ( 
-        <div className="services-container">
+        <div className="container-services">
             <ul>
                 <li>Tax Preparation
                     <ul>

@@ -1,5 +1,7 @@
 import ReCAPTCHA from "react-google-recaptcha";
 
+const {REACT_APP_LOCAL_PUBLIC_RECAPTCHA_SITE_KEY} = process.env;
+
 const Contact = () => {
 
 const handleOnChange = (value) => {
@@ -9,39 +11,59 @@ const handleOnChange = (value) => {
 
     return ( 
         <div>
-            <form>
-                <label>Full Name*</label>
-                <br/>
-                <input type="text" name="fname" placeholder="First Name" />
-                <input type="text" name="lname" placeholder="Last Name" />
-                <br/>
-                <label>Email Address*</label>
-                <br/>
-                <input type="text" name="email" placeholder="Email Address" />
-                <br/>
-                <label>Subject*</label>
-                <br/>
-                <input type="text" name="subject" placeholder="Subject Line" />
-                <br/>
-                <label>Message*</label>
-                <br/>
-                <input type="text" name="message" placeholder="Message" />
-                <br/>
-                <label>*Box must filled out</label>
-                <br/>
-                <button type="submit">SUBMIT</button>
-            </form>
-            <ReCAPTCHA 
-              sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" //currently local token, need to replace with site token, how to link env?
-              onChange={handleOnChange}
-             />
-            <div>
-                <h4>Contact Info</h4>
-                <p><a href="mailto:info@monteithtaxcpa.com">info@monteithtaxcpa.com</a>
-                    <br/>
-                    347-508-3407
-                    </p>
+            <div id="contact-header">
+                <h1>CONTACT</h1>
             </div>
+            <div id="container-contact" className="container-fluid">
+                <div className="row justify-content-md-center">
+                    <div className="col-2"></div>
+                    <div id="container-contact-content" className="col-4 align-self-center">
+                        <h2 style={{fontWeight: "bold"}}>Contact Info</h2>
+                        <p>E: <a href="mailto:info@monteithtaxcpa.com">info@monteithtaxcpa.com</a>
+                        <br/>
+                        T: <a href="tel:347-508-3407">347-508-3407</a>
+                        </p>
+                    </div>
+                    <div id="container-submit" className="col-4">
+                        <form>
+                            <label>Full Name<span style={{color: "red"}}>*</span></label>
+                            <br/>
+                            <input type="text" name="fname" placeholder="First Name" />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="text" name="lname" placeholder="Last Name" />
+                            <br/>
+                            <br/>
+                            <label>Email Address<span style={{color: "red"}}>*</span></label>
+                            <br/>
+                            <input type="text" name="email" placeholder="Email Address" />
+                            <br/>
+                            <br/>
+                            <label>Subject<span style={{color: "red"}}>*</span></label>
+                            <br/>
+                            <input type="text" name="subject" placeholder="Subject Line" />
+                            <br/>
+                            <br/>
+                            <label>Message<span style={{color: "red"}}>*</span></label>
+                            <br/>
+                            <input type="text" name="message" placeholder="Message" />
+                            <br/>
+                            <br/>
+                            <label style={{color: "red"}}>*Box must filled out</label>
+                            <br/>
+                            <br/>
+                            <button type="submit">SUBMIT</button>
+                            <br/>
+                            <br/>
+                            <ReCAPTCHA 
+                            sitekey={REACT_APP_LOCAL_PUBLIC_RECAPTCHA_SITE_KEY} //currently local token, need to replace with site token, how to link env?
+                            onChange={handleOnChange}
+                            />
+                        </form>
+                        <br/><br/>
+                    </div>
+                    <div className="col-2"></div>
+                </div>
+             </div>
         </div>
      );
 }
@@ -49,3 +71,4 @@ const handleOnChange = (value) => {
 export default Contact;
 
 //disable submit button if not verified
+//public site key for reCAPTCHA needs to be changed before launching website

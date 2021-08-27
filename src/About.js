@@ -15,7 +15,7 @@ const About = () => {
                 </p>
                 <br/>
                 <br/>
-            <h2>What else can Russell do?</h2> 
+            <h1>What else can Russell do?</h1> 
                 <p className="text-blurbs-content">
                 Russell is also a front end web developer. He has been learning how to build web applications and websites since
                 2020. He built this entire website all by himself from scratch. Can Russell help your accounting practice build an internal web application? 
