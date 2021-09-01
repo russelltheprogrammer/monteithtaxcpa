@@ -2,18 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 
-.App{
-  height: 100vh;
-}
-
 body{
   text-align: center;
   background: #8D9EC0;
   font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   position: relative;
-  margin: 0;
-  display: grid;
-  overflow: auto;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
 }
 
 .navbar-links {
@@ -37,7 +35,7 @@ body{
   width: 100%;
   background-color: #AAA9AD;
   padding-top: 25px;
-  padding-bottom: 15px;
+  padding-bottom: 5px;
   padding-right: 50px;
   font-size: 25px;
   color: black;
@@ -113,6 +111,13 @@ text-align: left;
 
 #container-contact-content{
 font-size: 25px;
+background-color: lightblue;
+border-radius: 70%;
+border-width: 5px;
+border-color: black;
+border-style: groove;
+padding: 20px;
+margin-bottom: 100px;
 }
 
 #container-submit{
@@ -122,17 +127,36 @@ background-color:#AAA9AD;
 border-style: solid;
 }
 
+.container-recaptcha{
+text-align: center;
+display: inline-block;
+}
+
+#contact-submit-btn{
+background-color: white;
+color: black;
+border-color: black;
+border-radius: 5%;
+border-width: 3px;
+}
+
+#contact-message-textarea{
+  width: 60%;
+  word-wrap: break-word;
+}
+
+#contact-submit-btn:hover{
+  background-color: red;
+}
+
 .footer-container{
   bottom: 0;
-  left: 0;
-  right: 0;
-  margin-top: auto;
+  padding-top: 10px;
   position: fixed;
-  overflow: hidden;
   width: 100%;
+  height: 40px;
   text-align: center;
   background-color: #AAA9AD;
-  padding-top: 10px;
 }
 
 

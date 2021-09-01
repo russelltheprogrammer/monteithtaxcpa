@@ -28,33 +28,33 @@ const handleOnChange = (value) => {
                         <form>
                             <label>Full Name<span style={{color: "red"}}>*</span></label>
                             <br/>
-                            <input type="text" name="fname" placeholder="First Name" />
+                            <input type="text" name="fname" placeholder="First Name" style={{width: "40%"}} />
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <input type="text" name="lname" placeholder="Last Name" />
+                            <input type="text" name="lname" placeholder="Last Name" style={{width: "40%"}} />
                             <br/>
                             <br/>
                             <label>Email Address<span style={{color: "red"}}>*</span></label>
                             <br/>
-                            <input type="text" name="email" placeholder="Email Address" />
+                            <input type="text" name="email" placeholder="Email Address" style={{width: "60%"}} />
                             <br/>
                             <br/>
                             <label>Subject<span style={{color: "red"}}>*</span></label>
                             <br/>
-                            <input type="text" name="subject" placeholder="Subject Line" />
+                            <input type="text" name="subject" placeholder="Subject Line" style={{width: "60%"}} />
                             <br/>
                             <br/>
                             <label>Message<span style={{color: "red"}}>*</span></label>
                             <br/>
-                            <input type="text" name="message" placeholder="Message" />
-                            <br/>
+                            <textarea id="contact-message-textarea" rows="5" type="text" name="message" placeholder="Message"/>
                             <br/>
                             <label style={{color: "red"}}>*Box must filled out</label>
                             <br/>
                             <br/>
-                            <button type="submit">SUBMIT</button>
+                            <button type="submit" id="contact-submit-btn" className="btn btn-lg">SUBMIT</button>
                             <br/>
                             <br/>
                             <ReCAPTCHA 
+                            className="container-recaptcha"
                             sitekey={REACT_APP_LOCAL_PUBLIC_RECAPTCHA_SITE_KEY} //currently local token, need to replace with site token, how to link env?
                             onChange={handleOnChange}
                             />
