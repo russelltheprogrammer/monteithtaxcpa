@@ -42,11 +42,19 @@ body{
   font-family: 'Carrois Gothic SC', sans-serif;
 }
 
+.topic-header{
+  width: 100%;
+  background: white;
+  padding-bottom: 2.5px;
+  padding-top: 2.5px;
+  background-color: #CC3B39;
+}
+
 .text-blurbs{
   width: 60%;
   align-items: center;
   margin: 0 auto;
-  padding-top: 50px;
+  padding-top: 5px;
 }
 
 .text-blurbs-content{
@@ -55,8 +63,7 @@ text-align: left;
 
 .container-services {
   font-size: 25px;
-  padding-top: 50px;
-  background-color: white;
+  padding-top: 5px;
   text-align: center;
 }
 
@@ -97,19 +104,13 @@ text-align: left;
   margin-bottom: 20px;
 }
 
-#contact-header{
-  width: 100%;
-  background: white;
-  padding: 10px;
-  margin-bottom: 25px;
-}
-
 #container-contact{
   width: 100%;
   margin: 0 auto;
+  padding-top: 10px;
 }
 
-#container-contact-content{
+#container-contact-info{
 font-size: 25px;
 background-color: lightblue;
 border-radius: 70%;
@@ -146,12 +147,12 @@ border-width: 3px;
 }
 
 #contact-submit-btn:hover{
-  background-color: red;
+  background-color: #CC3B39;
 }
 
 .footer-container{
   bottom: 0;
-  padding-top: 10px;
+  padding-top: 7.5px;
   position: fixed;
   width: 100%;
   height: 40px;

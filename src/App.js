@@ -1,4 +1,4 @@
-import './index.css';
+import './index.scss';
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Navbar from './Navbar';
@@ -48,5 +48,3 @@ function App() {
 }
 
 export default App;
-
-//add a captcha to contact page
