@@ -1,11 +1,21 @@
 import ReCAPTCHA from "react-google-recaptcha";
 import React, { useState } from "react";
+import { send } from "emailjs-com";
 
 const {REACT_APP_LOCAL_PUBLIC_RECAPTCHA_SITE_KEY} = process.env;
 
 const Contact = () => {
 
 const [isVerified, setIsVerified] = useState(false);
+const [toSend, setToSend] = useState({
+    firstname: '', lastname: '', email: '', subject: '', message: ''
+});
+
+const handleValueChange = (name) => {
+    return ({ target: {value} }) => {
+        setToSend(oldValues => ({...oldValues, [name]: value }));
+    }
+};
 
 const handleRecaptchaChange = (value) => {
     console.log("Captcha value:", value);
@@ -15,10 +25,23 @@ const handleRecaptchaChange = (value) => {
 const handleSubmit = (event) => {
     event.preventDefault();
     if(isVerified){
-
+        send(
+            'service_7qspm2o',
+            'template_oixk1c8',
+            toSend,
+            'user_fcp8crMMWBj4nlMkiNG06'
+          )
+            .then((response) => {
+              console.log('SUCCESS!', response.status, response.text);
+            })
+            .catch((err) => {
+              console.log('FAILED...', err);
+            });
     }
-
-}
+    else{
+        console.log("reCAPTCHA not verified");
+    }
+};
 
     return ( 
         <div>
@@ -39,24 +62,24 @@ const handleSubmit = (event) => {
                         <form onSubmit={handleSubmit}>
                             <label>Full Name<span style={{color: "red"}}>*</span></label>
                             <br/>
-                            <input type="text" required name="firstname" placeholder="First Name" style={{width: "40%"}} />
+                            <input type="text" required name="firstname" placeholder="First Name" value={toSend.firstname} onChange={handleValueChange('firstname')} style={{width: "40%"}} />
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <input type="text" required name="lastname" placeholder="Last Name" style={{width: "40%"}} />
+                            <input type="text" required name="lastname" placeholder="Last Name" value={toSend.lastname} onChange={handleValueChange('lastname')} style={{width: "40%"}} />
                             <br/>
                             <br/>
                             <label>Email Address<span style={{color: "red"}}>*</span></label>
                             <br/>
-                            <input type="text" required name="email" placeholder="Email Address" style={{width: "60%"}} />
+                            <input type="email" required name="email" placeholder="Email Address" value={toSend.email} onChange={handleValueChange('email')} style={{width: "60%"}} />
                             <br/>
                             <br/>
                             <label>Subject<span style={{color: "red"}}>*</span></label>
                             <br/>
-                            <input type="text" required name="subject" placeholder="Subject Line" style={{width: "60%"}} />
+                            <input type="text" required name="subject" placeholder="Subject Line" value={toSend.subject} onChange={handleValueChange('subject')} style={{width: "60%"}} />
                             <br/>
                             <br/>
                             <label>Message<span style={{color: "red"}}>*</span></label>
                             <br/>
-                            <textarea id="contact-message-textarea" rows="5" type="text" required name="message" placeholder="Message"/>
+                            <textarea id="contact-message-textarea" rows="6" type="text" required name="message" placeholder="Message" value={toSend.message} onChange={handleValueChange('message')} />
                             <br/>
                             <label style={{color: "red"}}>*Box must filled out</label>
                             <br/>
