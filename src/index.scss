@@ -26,14 +26,22 @@ body{
   display: inline;
 }
 
-.navbar-links > a, a:hover, a:focus {
+.navbar-links > a, a:focus {
   text-decoration: none;
   color: black;
+ 
 }
+
+.navbar-links > a:hover {
+  text-decoration: none;
+  color: black;
+  background-color: #B22222;
+}
+
 
 .container-navbar {
   width: 100%;
-  background-color: #AAA9AD;
+  background-color: white;
   padding-top: 25px;
   padding-bottom: 5px;
   padding-right: 50px;
@@ -157,7 +165,7 @@ border-width: 3px;
   width: 100%;
   height: 40px;
   text-align: center;
-  background-color: #AAA9AD;
+  background-color: white;
 }
 
 
