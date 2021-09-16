@@ -1,7 +1,6 @@
 import ReCAPTCHA from "react-google-recaptcha";
 import React, { useState } from "react";
-
-const {REACT_APP_LOCAL_PUBLIC_RECAPTCHA_SITE_KEY} = process.env;
+const {REACT_APP_LOCAL_PUBLIC_RECAPTCHA_SITE_KEY} = process.env; //currently local token, need to replace with site token, how to link env?
 
 const Contact = () => {
 
@@ -9,6 +8,7 @@ const [isVerified, setIsVerified] = useState(false);
 const [values, setValues] = useState({
     firstname: '', lastname: '', email: '', subject: '', message: ''
 });
+const [status, setStatus] = useState("Submit");
 
 const handleValueChange = (name) => {
     return ({ target: {value} }) => {
@@ -19,12 +19,22 @@ const handleValueChange = (name) => {
 const handleRecaptchaChange = (value) => {
     console.log("Captcha value:", value);
     setIsVerified(true);
-}
+};
 
-const handleSubmit = (event) => {
+const handleSubmit = async (event) => {
     event.preventDefault();
     if(isVerified){
-       // new code
+       setStatus("Sending...");
+       let response = await fetch("http://localhost:3000/contact", {
+           method: "POST",
+           headers: {
+               "Content-Type": "application/json;charset=utf-8",
+           },
+           body: JSON.stringify(values),
+       });
+       setStatus("Submit");
+       let result = await response.json();
+       alert(result.status);
     }
     else{
         console.log("reCAPTCHA not verified");
