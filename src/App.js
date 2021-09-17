@@ -11,7 +11,7 @@ import Contact from './Contact';
 import NotFound from './NotFound';
 import Footer from './Footer';
 
-function App() {
+const App = () => {
   return (
     <Router>
     <div className="App">
