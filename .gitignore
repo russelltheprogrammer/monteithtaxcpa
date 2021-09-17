@@ -21,10 +21,11 @@
 /notes
 
 # NodeJS
-/.server
-.server.js
+/server.js
+server.js
 
-#test
+
+
 
 npm-debug.log*
 yarn-debug.log*
