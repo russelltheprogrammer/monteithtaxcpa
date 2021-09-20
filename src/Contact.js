@@ -25,7 +25,7 @@ const handleSubmit = async (event) => {
     event.preventDefault();
     if(isVerified){
        setStatus("Sending...");
-       const response = await fetch("http://localhost:3000/contact", {
+       const response = await fetch("http://localhost:3001/contact", {
            method: "POST",
            headers: {
                "Content-Type": "application/json;charset=utf-8",
