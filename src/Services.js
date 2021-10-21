@@ -6,14 +6,14 @@ const Services = () => {
             </div>
             <div className="container-services">
                 <ul>
-                    <li>Tax Preparation
+                    <li>Tax Preparation (Federal &amp; State)
                         <ul>
                             <li>Individual</li>
                             <li>Partnership</li>
                             <li>Corporation &amp; S-Corporation</li>
                             <li>Non-Profit</li>
-                            <li>Trust</li>
-                            <li>Gift Tax</li>
+                            <li>Trust &amp; Gift</li>
+                            <li>Foreign &amp; Expatriate</li>
                         </ul>
                     </li>
                     <li>Tax Planning</li>

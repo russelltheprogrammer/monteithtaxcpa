@@ -6,18 +6,15 @@ const About = () => {
             <div className="topic-header">
                 <h1>ABOUT</h1>
             </div>
-            <div className="text-blurbs">
+            <div className="text-blurbs-about">
                 <h1>Who is Russell Monteith?</h1>
                     <p className="text-blurbs-content">
                     Russell is a Certified Public Accountant licensed in the State of New York. He has over 8 years of experience working as a
-                    professional accountant including tax accounting. He graduated from Binghamton University with his Masters in Accounting in the Spring of 2013 and 
-                    got his first job soon after. While working toward's his Masters, Russell passed all 4 parts of the CPA test 
-                    before graduating. The CPA test is a grueling test with an average pass rate of about 50%. He has experience working in 
-                    many different areas of tax from small businesses to large partnerships, from trusts to gift taxes, 
-                    from non-profits to corporations, and from small individuals to wealthy individuals. Russell's wide array of experience
+                    professional accountant focused primarily in tax. He graduated from Binghamton University with his Bachelor of Science in Accounting in 2012 and his
+                    Masters in Accounting in 2013. He has experience working in many different areas of tax from small businesses to large partnerships, from trusts to gift taxes, 
+                    from non-profits to corporations, from small individuals to wealthy individuals, and from domestic clients all around the country to overseas clients. Russell's wide array of experience
                     sets him apart from others in the industry.
                     </p>
-                    <br/>
                     <br/>
                 <h1>What else can Russell do?</h1> 
                     <p className="text-blurbs-content">

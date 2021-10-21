@@ -84,8 +84,7 @@ const handleSubmit = async (event) => {
                             <label style={{color: "red"}}>*Box must filled out</label>
                             <br/>
                             <br/>
-                            <button type="submit" disabled={!values.firstname || !values.lastname || !values.email || !values.subject || !values.message || !isVerified} 
-                            id="contact-submit-btn" className="btn btn-lg">SUBMIT</button>
+                            <button type="submit" disabled={!isVerified} id="contact-submit-btn" className="btn btn-lg">SUBMIT</button>
                             <br/>
                             <br/>
                             <ReCAPTCHA 

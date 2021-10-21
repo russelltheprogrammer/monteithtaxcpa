@@ -65,6 +65,12 @@ body{
   padding-top: 5px;
 }
 
+.text-blurbs-about{
+  @extend .text-blurbs;
+  // background-color: #C1D7AE;
+  // padding: 15px;
+}
+
 .text-blurbs-content{
 text-align: left;
 }
@@ -96,16 +102,18 @@ text-align: left;
 }
 
 .container-links{
-  padding-top: 50px;
+  padding-top: 25px;
   text-align: center;
+  font-size: 18px;
 }
 
 .container-links > ul{
-  list-style-type: none;
+  list-style-type: "\1F44D";
   padding: 0;
   text-align: left;
   display: inline-block;
   margin-left: 30%;
+  text-indent: 0.5%;
 }
 
 .container-links li {
@@ -142,7 +150,7 @@ display: inline-block;
 }
 
 #contact-submit-btn{
-background-color: white;
+background-color: #C1D7AE;
 color: black;
 border-color: black;
 border-radius: 5%;
@@ -155,7 +163,7 @@ border-width: 3px;
 }
 
 #contact-submit-btn:hover{
-  background-color: #C1D7AE;
+  background-color: #FFCAB1;
 }
 
 .footer-container{
