@@ -8,6 +8,7 @@ const [isVerified, setIsVerified] = useState(false);
 const [values, setValues] = useState({
     firstname: '', lastname: '', email: '', subject: '', message: ''
 });
+
 const [status, setStatus] = useState("Submit");
 
 const handleValueChange = (name) => {
@@ -48,7 +49,7 @@ const handleSubmit = async (event) => {
             </div>
             <div id="container-contact" className="container-fluid">
                 <div className="row justify-content-md-center">
-                    <div className="col-2"></div>
+                    <div className="col-1"></div>
                     <div id="container-contact-info" className="col-4 align-self-center">
                         <h2 style={{fontWeight: "bold"}}>Contact Info</h2>
                         <p>E: <a href="mailto:info@monteithtaxcpa.com">info@monteithtaxcpa.com</a>
@@ -56,6 +57,7 @@ const handleSubmit = async (event) => {
                         T: <a href="tel:347-508-3407">347-508-3407</a>
                         </p>
                     </div>
+                    <div className="col-1"></div>
                     <div id="container-submit" className="col-4">
                         <form onSubmit={handleSubmit}>
                             <label>Full Name<span style={{color: "red"}}>*</span></label>
@@ -82,7 +84,8 @@ const handleSubmit = async (event) => {
                             <label style={{color: "red"}}>*Box must filled out</label>
                             <br/>
                             <br/>
-                            <button type="submit" id="contact-submit-btn" className="btn btn-lg">SUBMIT</button>
+                            <button type="submit" disabled={!values.firstname || !values.lastname || !values.email || !values.subject || !values.message || !isVerified} 
+                            id="contact-submit-btn" className="btn btn-lg">SUBMIT</button>
                             <br/>
                             <br/>
                             <ReCAPTCHA 
@@ -93,7 +96,7 @@ const handleSubmit = async (event) => {
                         </form>
                         <br/><br/>
                     </div>
-                    <div className="col-2"></div>
+                    <div className="col-1"></div>
                 </div>
              </div>
         </div>
