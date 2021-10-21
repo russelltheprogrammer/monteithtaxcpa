@@ -10,7 +10,7 @@ const About = () => {
                 <h1>Who is Russell Monteith?</h1>
                     <p className="text-blurbs-content">
                     Russell is a Certified Public Accountant licensed in the State of New York. He has over 8 years of experience working as a
-                    professional accountant. He graduated from Binghamton University with his Masters in Accounting in the Spring of 2013 and 
+                    professional accountant including tax accounting. He graduated from Binghamton University with his Masters in Accounting in the Spring of 2013 and 
                     got his first job soon after. While working toward's his Masters, Russell passed all 4 parts of the CPA test 
                     before graduating. The CPA test is a grueling test with an average pass rate of about 50%. He has experience working in 
                     many different areas of tax from small businesses to large partnerships, from trusts to gift taxes, 
