@@ -79,9 +79,9 @@ const handleSubmit = async (event) => {
                             <br/>
                             <label>Message<span style={{color: "red"}}>*</span></label>
                             <br/>
-                            <textarea id="contact-message-textarea" rows="6" type="text" required name="message" placeholder="Message" value={values.message} onChange={handleValueChange('message')} />
+                            <textarea id="contact-message-textarea" rows="5" type="text" required name="message" placeholder="Message" value={values.message} onChange={handleValueChange('message')} />
                             <br/>
-                            <label style={{color: "red"}}>*Box must filled out</label>
+                            <label style={{color: "red"}}>*Box must be filled out</label>
                             <br/>
                             <br/>
                             <button type="submit" disabled={!isVerified} id="contact-submit-btn" className="btn btn-lg">SUBMIT</button>
