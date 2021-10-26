@@ -164,6 +164,25 @@ border-width: 3px;
   background-color: #FFCAB1;
 }
 
+#container-after-submit{
+color: black;
+text-align: center;
+overflow-wrap: break-word;
+font-size: 25px;
+}
+
+#contact-after-submit-error{
+    top: 50%;
+    left: 25%;
+    right: 25%;
+    width: 50%;
+    text-align: center;
+    overflow-wrap: break-word;
+    position: absolute;
+    font-size: 25px;
+    color: red;
+}
+
 .footer-container{
   bottom: 0;
   padding-top: 7.5px;
