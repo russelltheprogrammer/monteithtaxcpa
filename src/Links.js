@@ -7,8 +7,8 @@ const Links = () => {
             <div className="container-links">
                 <ul>
                     <li><a href="http://www.irs.gov" rel="noreferrer" target="_blank">Internal Revenue Service</a></li>
-                    <li><a href="https://www.tax.ny.gov/" rel="noreferrer" target="_blank">New York State Department Of Taxation and Finance</a></li>
                     <li><a href="https://www.irs.gov/payments" rel="noreferrer" target="_blank">IRS Pay</a>  <i class="fas fa-long-arrow-alt-right"></i> Pay IRS taxes directly via the web (no sign-up necessary)</li>
+                    <li><a href="https://www.tax.ny.gov/" rel="noreferrer" target="_blank">New York State Department Of Taxation and Finance</a></li>
                     <li><a href="https://www.tax.ny.gov/online/" rel="noreferrer" target="_blank">NYS Department Of Taxation and Finance Online Services</a>
                         &nbsp;&nbsp;<i class="fas fa-long-arrow-alt-right"></i> Create an online account and pay NYS taxes directly via the web
                     </li>
