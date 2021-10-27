@@ -53,7 +53,7 @@ const handleSubmit = async (event) => {
                     <div className="row justify-content-md-center">
                         <div className="col-1"></div>
                         <div id="container-contact-info" className="col-4 align-self-center">
-                            <h2 style={{fontWeight: "bold"}}>Contact Info</h2>
+                            <h2 id="contact-info-title">Contact Info</h2>
                             <p>E: <a href="mailto:info@monteithtaxcpa.com">info@monteithtaxcpa.com</a>
                             <br/>
                             T: <a href="tel:347-508-3407">347-508-3407</a>
@@ -113,7 +113,7 @@ const handleSubmit = async (event) => {
                     <div className="row justify-content-md-center">
                         <div className="col-1"></div>
                         <div id="container-contact-info" className="col-4 align-self-center">
-                            <h2 style={{fontWeight: "bold"}}>Contact Info</h2>
+                            <h2 id="contact-info-title">Contact Info</h2>
                             <p>E: <a href="mailto:info@monteithtaxcpa.com">info@monteithtaxcpa.com</a>
                             <br/>
                             T: <a href="tel:347-508-3407">347-508-3407</a>
