@@ -37,6 +37,7 @@ router.post("/contact", (req, res) => {
     const firstname = req.body.firstname;
     const lastname = req.body.lastname;
     const email = req.body.email;
+    const phonenumber = req.body.phonenumber;
     const subject = req.body.subject;
     const message = req.body.message;
     const mail = {
@@ -45,6 +46,7 @@ router.post("/contact", (req, res) => {
         subject: subject,
         html: `<p>Name: ${lastname} , ${firstname}</p>
                <p>Email: ${email}</p>
+               <p>Phone Number: ${phonenumber}</p>
                <p>Message: ${message}</p>`,
     };
     contactEmail.sendMail(mail, (error) => {
