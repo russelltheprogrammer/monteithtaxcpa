@@ -4,13 +4,13 @@
 
 body{
   text-align: center;
-  background: #FFFFFF;
+  background: #ffffff;
   font-family: 'Roboto', sans-serif;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   position: relative;
-  margin-bottom: 40px;
+  margin-bottom: 80px;
   padding-bottom: 20px;
 }
 
@@ -37,11 +37,11 @@ body{
 .nav-item > a:hover {
   text-decoration: none;
   color: black;
-  background-color: #CBF3F0;
+  background-color: #17c3b2;
 }
 
 .container-navbar {
-  background-color: #2EC4B6;
+  background-color: #fe6d73;
   padding-top: 10px;
   padding-bottom: 10px;
   font-size: 25px;
@@ -53,7 +53,7 @@ body{
   width: 100%;
   padding-bottom: 2.5px;
   padding-top: 2.5px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   text-decoration: underline;
 }
 
@@ -146,7 +146,7 @@ font-size: 18px;
 
 #container-contact-info{
 font-size: 25px;
-background-color: #FF9F1C;
+background-color: #ffcb77;
 border-radius: 70%;
 border-width: 5px;
 border-color: black;
@@ -172,7 +172,7 @@ margin-bottom: 100px;
 #container-submit{
 padding-top: 15px;
 padding-bottom: 15px;
-background-color:#FF9F1C;
+background-color:#ffcb77;
 border-style: solid;
 }
 
@@ -182,7 +182,7 @@ display: inline-block;
 }
 
 #contact-submit-btn{
-background-color: #FFBF69;
+background-color: #fe6d73;
 color: black;
 border-color: black;
 border-radius: 5%;
@@ -195,7 +195,7 @@ border-width: 3px;
 }
 
 #contact-submit-btn:hover{
-  background-color: #CBF3F0;
+  background-color: #17c3b2;
 }
 
 #container-after-submit{
@@ -217,6 +217,15 @@ font-size: 25px;
     color: red;
 }
 
+.gradient-container{
+  bottom: 40px;
+  position: fixed;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  background: linear-gradient(to bottom, transparent 0%, rgb(75, 75, 75) 100%);
+}
+
 .footer-container{
   bottom: 0;
   padding-top: 7.5px;
@@ -224,7 +233,7 @@ font-size: 25px;
   width: 100%;
   height: 40px;
   text-align: center;
-  background-color: #2EC4B6;
+  background-color: #fe6d73;
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
