@@ -17,7 +17,7 @@ const Home = () => {
                 
             </div>
             <br/>
-            <img src="homepageimage.jpg" alt="Home Page" width="75%" height="275" />
+            <img src="homepageimage.jpg" alt="Home Page" width="100%" height="275" />
         </div>
      );
 }
