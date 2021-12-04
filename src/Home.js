@@ -14,10 +14,9 @@ const Home = () => {
                     <br/>
                     Russell is currently accepting new clients. Contact Russell today for a free consultation!
                 </p>
-                
             </div>
             <br/>
-            <img src="homepageimage.jpg" alt="Home Page" width="100%" height="275" />
+            {/* <img src="homepageimage.jpg" alt="Home Page" width="100%" height="275" /> */}
         </div>
      );
 }
