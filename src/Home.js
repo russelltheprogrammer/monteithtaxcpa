@@ -16,7 +16,7 @@ const Home = () => {
                 </p>
             </div>
             <br/>
-            {/* <img src="homepageimage.jpg" alt="Home Page" width="100%" height="275" /> */}
+            <img id="homepage-image" src="homepageimage.jpg" alt="Home Page" />
         </div>
      );
 }

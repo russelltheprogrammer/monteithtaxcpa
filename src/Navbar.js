@@ -9,8 +9,7 @@ const Navbar = () => {
     const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
 
     return ( 
-        <div className="container-navbar">
-            <nav className="navbar navbar-expand-md navbar-light">
+            <nav id="container-navbar" className="navbar navbar-expand-md sticky-top navbar-light">
                 <div className="container-fluid">
                     <span className="navbar-brand" id="navbar-logo"><img alt="Logo" width="30" height="24" className="d-inline-block align-top" /><span className="hidden">My Logo</span></span>
                     <button
@@ -50,7 +49,6 @@ const Navbar = () => {
                     </div>
                 </div>
             </nav>
-        </div>
      );
 }
  
