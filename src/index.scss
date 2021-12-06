@@ -12,7 +12,6 @@ body{
   position: relative;
   margin-bottom: 90px;
   padding-bottom: 20px;
-
 }
 
 .hidden {
@@ -126,27 +125,13 @@ font-size: 18px;
   }
 }
 
-.container-tools{
- top: 40%;
- left: 0;
- width: 100%;
- text-align: center;
- position: absolute;
- font-size: 50px;
- color: red;
-}
-
-.tools-link{
-  font-size: 25px;
-}
-
-.container-links{
+.container-resources{
   padding-top: 25px;
   text-align: center;
   font-size: 18px;
 }
 
-.container-links > ul{
+.container-resources > ul{
   list-style-type: "\1F44D";
   padding: 0;
   text-align: left;
@@ -157,14 +142,14 @@ font-size: 18px;
 }
 
 @media (max-width: 480px) {
-  .container-links > ul {
+  .container-resources > ul {
     margin-left: 20%;
     margin-right: 5%;
     text-indent: 0.5%;
   }
 }
 
-.container-links li {
+.container-resources li {
   margin-bottom: 20px;
 }
 

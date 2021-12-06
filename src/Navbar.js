@@ -37,10 +37,7 @@ const Navbar = () => {
                                 <Link to="services">Services</Link>
                             </li>
                             <li className="nav-item">
-                                <Link to="tools">Tools</Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link to="links">Links</Link>
+                                <Link to="resources">Resources</Link>
                             </li>
                             <li className="nav-item">
                                 <Link to="contact">Contact</Link>

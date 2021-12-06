@@ -1,5 +1,3 @@
-import { Link } from 'react-router-dom';
-
 const About = () => {
     return (
         <div>
@@ -9,23 +7,30 @@ const About = () => {
             <div className="text-blurbs-about">
                 <h1>Who is Russell Monteith?</h1>
                     <p className="text-blurbs-content-about">
-                    Russell is a Certified Public Accountant licensed in the State of New York. He has almost 10 years of experience working as a
-                    professional accountant as tax as his speciality. He graduated from Binghamton University with his Bachelor of Science in Accounting in 2012 and his
-                    Masters in Accounting in 2013. He has experience working in many different areas of tax from small businesses to large partnerships, from trusts to gift taxes, 
-                    from non-profits to corporations, from small individuals to wealthy individuals, and from domestic clients located all around the country to overseas clients. Russell's wide array of experience
-                    sets him apart from others in the industry.
+                    I am Russell Monteith, a Certified Public Accountant licensed in the State of New York and sole owner of this PLLC. 
+                    I spent the bulk of my prior tax experience working in New York City for a prestigious accounting firm. I treat each client's tax
+                    situation as unique and thrive to deliver the utmost care and value as if it was my own.
+                    <br/>
+                    <br/>
+                    I have focused on tax accounting professionally for almost a decade. I've done great work with businesses 
+                    large and small as well as non-profits. I've worked with individuals both small and wealthy; 
+                    clients both domestic and international. I'm also familiar with the 
+                    intricacies of trusts and gift taxes, as well as inheritance. My wide array of experience sets me apart from
+                    others in the industry.
                     </p>
                     <br/>
                 <h1>What else can Russell do?</h1> 
                     <p className="text-blurbs-content-about">
-                    Russell is also a front end web developer and currently learning back end development to eventually become a full stack developer. He has been learning how to build web applications and websites since
-                    2020. He built this entire website all by himself, from scratch. Can Russell help your accounting practice build an internal web application? 
-                    Yes, he can. Please see the <Link to="links">LINKS PAGE</Link> to
-                    see Russell's GitHub to see the projects that Russell has completed in his spare time.
+                    I also offer web development services. In addition to traditional website services, my financial knowledge makes me 
+                    uniquely qualified to help your company develop your own internal accounting, financial, or bookkeeping applications. 
+                    There are many areas of a business that can be improved which can save you and
+                    your clients lots of time and I can help you make it happen. See some of my
+                    &nbsp;<a href="https://github.com/russelltheprogrammer" rel="noreferrer" target="_blank">programming work here</a>. 
+                    I also build this entire website from scratch.
                     <br/>
                     <br/>
                     A lot of people know how to do taxes and a lot of people know how to program websites but very few can do both.
-                    Russell is one of them.
+                    I am one of them.
                     </p>
             </div>
         </div>

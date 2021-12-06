@@ -1,5 +1,6 @@
-
 const Home = () => {
+
+
     return ( 
         <div>
             <div className="text-blurbs">
