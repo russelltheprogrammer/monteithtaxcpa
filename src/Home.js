@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 const Home = () => {
 
 
@@ -10,7 +12,7 @@ const Home = () => {
                 <br/>
                 <p className="text-blurbs-content-home">
                     Please take a look around the website, you can contact Russell right away by 
-                    clicking <a href="mailto:info@monteithtaxcpa.com">HERE</a>.
+                    clicking <Link to="/contact">HERE</Link>.
                     <br/>
                     <br/>
                     Russell is currently accepting new clients. Contact Russell today for a free consultation!

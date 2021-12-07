@@ -1,4 +1,7 @@
+
+
 const About = () => {
+
 
     return (
         <div>
@@ -26,8 +29,8 @@ const About = () => {
                     uniquely qualified to help your company develop your own internal accounting, financial, or bookkeeping applications. 
                     There are many areas of a business that can be improved which can save you and
                     your clients lots of time and I can help you make it happen. See some of my
-                    &nbsp;<a href="https://github.com/russelltheprogrammer" rel="noreferrer" target="_blank">programming work here</a>. 
-                    I also build this entire website from scratch.
+                    &#160;<a href="https://github.com/russelltheprogrammer" rel="noreferrer" target="_blank">programming work here</a>. 
+                    I also built this entire website from scratch.
                     <br/>
                     <br/>
                     A lot of people know how to do taxes and a lot of people know how to program websites but very few can do both.
