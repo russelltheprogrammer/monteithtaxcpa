@@ -4,6 +4,11 @@ const {REACT_APP_LOCAL_PUBLIC_RECAPTCHA_SITE_KEY} = process.env; //currently loc
 
 const Contact = () => {
 
+const username = "info";
+const hostname = "monteithtaxcpa.com";
+const firstnum = "347-50";
+const secondnum = "8-3407";
+
 const [isVerified, setIsVerified] = useState(false);
 const [values, setValues] = useState({
     firstname: '', lastname: '', email: '', phonenumber: '', subject: '', message: ''
@@ -64,9 +69,9 @@ const handleSubmit = async (event) => {
                         <div className="col-1"></div>
                         <div id="container-contact-info" className="col-4 align-self-center">
                             <h2 id="contact-info-title">Contact Info</h2>
-                            <p>E: <a href="mailto:info@monteithtaxcpa.com">info@monteithtaxcpa.com</a>
+                            <p>E: <a href={`mailto:${username}@${hostname}`}>{username}@{hostname}</a>
                             <br/>
-                            T: <a href="tel:347-508-3407">347-508-3407</a>
+                            T: <a href={`tel:${firstnum}${secondnum}`}>{firstnum}{secondnum}</a>
                             </p>
                         </div>
                         <div className="col-1"></div>
@@ -129,9 +134,9 @@ const handleSubmit = async (event) => {
                         <div className="row-1"></div>
                         <div id="container-contact-info" className="row-4 align-self-center">
                             <h2 id="contact-info-title">Contact Info</h2>
-                            <p>E: <a href="mailto:info@monteithtaxcpa.com">info@monteithtaxcpa.com</a>
+                            <p>E: <a href={`mailto:${username}@${hostname}`}>{username}@{hostname}</a>
                             <br/>
-                            T: <a href="tel:347-508-3407">347-508-3407</a>
+                            T: <a href={`tel:${firstnum}${secondnum}`}>{firstnum}{secondnum}</a>
                             </p>
                         </div>
                         <div className="row-1"></div>
@@ -194,9 +199,9 @@ const handleSubmit = async (event) => {
                         <div className="col-1"></div>
                         <div id="container-contact-info" className="col-4 align-self-center">
                             <h2 id="contact-info-title">Contact Info</h2>
-                            <p>E: <a href="mailto:info@monteithtaxcpa.com">info@monteithtaxcpa.com</a>
+                            <p>E: <a href={`mailto:${username}@${hostname}`}>{username}@{hostname}</a>
                             <br/>
-                            T: <a href="tel:347-508-3407">347-508-3407</a>
+                            T: <a href={`tel:${firstnum}${secondnum}`}>{firstnum}{secondnum}</a>
                             </p>
                         </div>
                         <div className="col-1"></div>
@@ -222,11 +227,10 @@ const handleSubmit = async (event) => {
                         <br/>
                         <br/>
                         <div id="container-contact-info">
-                            <h2 id="contact-info-title">Contact Info</h2>
-                            <p>E: <a href="mailto:info@monteithtaxcpa.com">info@monteithtaxcpa.com</a>
-                            <br/>
-                            T: <a href="tel:347-508-3407">347-508-3407</a>
-                            </p>
+                        <p>E: <a href={`mailto:${username}@${hostname}`}>{username}@{hostname}</a>
+                        <br/>
+                        T: <a href={`tel:${firstnum}${secondnum}`}>{firstnum}{secondnum}</a>
+                        </p>
                         </div>
                     </div>
             </div>
