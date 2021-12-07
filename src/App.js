@@ -9,12 +9,14 @@ import Resources from './Resources';
 import Contact from './Contact';
 import NotFound from './NotFound';
 import Footer from './Footer';
+import ScrollToTop from './ScrollToTop';
 
 const App = () => {
   
   return (
     <div className="App">
       <Router>
+        <ScrollToTop />
           <Navbar />
             <div>
               <Switch>
