@@ -11,7 +11,11 @@ const Navbar = () => {
     return ( 
             <nav id="container-navbar" className="navbar navbar-expand-md sticky-top navbar-light">
                 <div className="container-fluid">
-                    <span className="navbar-brand" id="navbar-logo"><img alt="Logo" width="30" height="24" className="d-inline-block align-top" /><span className="hidden">My Logo</span></span>
+                    <span className="navbar-brand" id="navbar-logo">
+                        <img id="navbar-logo-img" src="navbarlogoimage.png" alt="Logo" className="d-inline-block align-top" />
+                        <img id="navbar-logo-wordmark" src="navbarlogowordmark.png" alt="Logo" className="d-inline-block align-top" />
+                        <span className="hidden">My Logo</span>
+                        </span>
                     <button
                     className="navbar-toggler"
                     type="button"

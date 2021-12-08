@@ -10,6 +10,9 @@ const Home = () => {
                 <h1>Welcome to RUSSELL MONTEITH CPA PLLC</h1>
                 <h4>A digital accounting practice</h4>
                 <br/>
+                <img id="homepage-logo-img" src="homepagelogoimage.png" alt="Home Page Logo" />
+                <br/>
+                <br/>
                 <p className="text-blurbs-content-home">
                     Please take a look around the website, you can contact Russell right away by 
                     clicking <Link to="/contact">HERE</Link>.
