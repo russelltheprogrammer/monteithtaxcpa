@@ -45,6 +45,7 @@ const Navbar = () => {
                         </ul>
                     </div>
                 </div>
+                <div className="gradient-container-top"></div>
             </nav>
      );
 }
