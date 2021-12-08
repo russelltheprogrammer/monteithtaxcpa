@@ -20,7 +20,7 @@ body{
 }
 
 .gradient-container-top{
-  top: 55px;
+  top: 70px;
   position: fixed;
   width: 100%;
   height: 10px;
@@ -39,6 +39,47 @@ body{
   padding-left: 10px;
 }
 
+#navbar-logo-img{
+  width: 30%; 
+  height: 50px; 
+}
+
+@media (min-width: 770px) and (max-width: 1024px){
+  #navbar-logo-img{
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 400px) {
+  .container-resources > ul {
+    margin-left: 20%;
+    margin-right: 5%;
+    text-indent: 0.5%;
+  }
+}
+
+#navbar-logo-wordmark{
+  width: 90%; 
+  height: 17.5px;
+  margin-top: 17.5px;
+  margin-left: 7px; 
+}
+
+@media (min-width: 770px) and (max-width: 1024px){
+  #navbar-logo-wordmark{
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 320px) {
+  #navbar-logo-wordmark{
+    display: none;
+    visibility: hidden;
+  }
+}
+
 .nav-item > a, a:focus {
   text-decoration: none;
   color: black;
@@ -51,7 +92,7 @@ body{
 
 #container-navbar {
   background-color: white;
-  padding-top: 10px;
+  padding-top: 5px;
   padding-bottom: 5px;
   font-size: 25px;
   color: black;
@@ -90,7 +131,6 @@ body{
   }
 }
 
-
 @media (min-width: 1025px) and (max-width: 1366px){
   #homepage-image{
     width: 80%;
@@ -102,6 +142,32 @@ body{
   #homepage-image{
     width: 100%;
     height: 300px;
+  }
+}
+
+#homepage-logo-img{
+  width: 50%;
+  height: 175px;
+}
+
+@media (min-width: 1025px) and (max-width: 1574px){
+  #homepage-logo-img{
+    width: 50%;
+    height: 125px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1024px){
+  #homepage-logo-img{
+    width: 75%;
+    height: 125px;
+  }
+}
+
+@media (max-width: 480px){
+  #homepage-logo-img{
+    width: 90%;
+    height: 100px;
   }
 }
 
@@ -176,8 +242,7 @@ font-size: 18px;
 
 #container-contact-info{
 font-size: 25px;
-background-color: #E0ACD5;
-border-radius: 70%;
+background-color: white;
 border-width: 5px;
 border-color: black;
 border-style: groove;
@@ -202,8 +267,11 @@ margin-bottom: 100px;
 #container-submit{
 padding-top: 15px;
 padding-bottom: 15px;
-background-color:#E0ACD5;
+background-color:#4C8099;
+color: white;
 border-style: solid;
+border-width: 3px;
+border-color: black;
 }
 
 .container-recaptcha{
@@ -212,8 +280,8 @@ display: inline-block;
 }
 
 #contact-submit-btn{
-background-color: #F4EBE8;
-color: black;
+background-color: #105577;
+color: white;
 border-color: black;
 border-radius: 5%;
 border-width: 3px;
@@ -225,7 +293,7 @@ border-width: 3px;
 }
 
 #contact-submit-btn:hover{
-  background-color: #3993DD;
+  color: blue;
 }
 
 #container-after-submit{
@@ -278,6 +346,3 @@ font-size: 25px;
     font-size: 10px;
   }
 }
-
-
-// other white: #F7FFF7
