@@ -1,13 +1,10 @@
 import ReCAPTCHA from "react-google-recaptcha";
 import React, { useState } from "react";
+import ContactInfo from "./ContactInfo";
+import ContactHomePageLink from "./ContactHomePageLink";
 const {REACT_APP_LOCAL_PUBLIC_RECAPTCHA_SITE_KEY} = process.env; //currently local token, need to replace with site token, how to link env?
 
-const Contact = () => {
-
-const username = "info";
-const hostname = "monteithtaxcpa.com";
-const firstnum = "347-50";
-const secondnum = "8-3407";
+const Contact = (props) => {
 
 const [isVerified, setIsVerified] = useState(false);
 const [values, setValues] = useState({
@@ -52,18 +49,12 @@ const handleSubmit = async (event) => {
         return (
             <div>
                 <div className="topic-header">
-                    <h1>CONTACT</h1>
+                    {props.header ? <h1>CONTACT</h1> : <div></div>}
                 </div>
                 <div id="container-contact" className="container-fluid">
                     <div className="col justify-content-md-center">
                         <div className="row-1"></div>
-                        <div id="container-contact-info" className="row-4 align-self-center">
-                            <h2 id="contact-info-title">Contact Info</h2>
-                            <p>E: <a href={`mailto:${username}@${hostname}`}>{username}@{hostname}</a>
-                            <br/>
-                            T: <a href={`tel:${firstnum}${secondnum}`}>{firstnum}{secondnum}</a>
-                            </p>
-                        </div>
+                        <ContactInfo />
                         <div className="row-1"></div>
                         <div id="container-submit" className="row-4">
                             <form onSubmit={handleSubmit}>
@@ -76,17 +67,17 @@ const handleSubmit = async (event) => {
                                 <br/>
                                 <label>Email Address<span style={{color: "red"}}>*</span></label>
                                 <br/>
-                                <input type="email" required name="email" placeholder="Email Address" value={values.email} onChange={handleValueChange('email')} style={{width: "60%"}} />
+                                <input type="email" required name="email" placeholder="Email Address" value={values.email} onChange={handleValueChange('email')} style={{width: "83%"}} />
                                 <br/>
                                 <br/>
                                 <label>Phone Number</label>
                                 <br/>
-                                <input type="phonenumber" placeholder="Phone Number" value={values.phonenumber} onChange={handleValueChange('phonenumber')} style={{width: "60%"}} />
+                                <input type="phonenumber" placeholder="Phone Number" value={values.phonenumber} onChange={handleValueChange('phonenumber')} style={{width: "83%"}} />
                                 <br/>
                                 <br/>
                                 <label>Subject<span style={{color: "red"}}>*</span></label>
                                 <br/>
-                                <input type="text" required name="subject" placeholder="Subject Line" value={values.subject} onChange={handleValueChange('subject')} style={{width: "60%"}} />
+                                <input type="text" required name="subject" placeholder="Subject Line" value={values.subject} onChange={handleValueChange('subject')} style={{width: "83%"}} />
                                 <br/>
                                 <br/>
                                 <label>Message<span style={{color: "red"}}>*</span></label>
@@ -117,20 +108,18 @@ const handleSubmit = async (event) => {
         return (
             <div>
                 <div className="topic-header">
-                    <h1>CONTACT</h1>
                 </div>
                 <div id="container-contact" className="container-fluid">
                         <div id="container-after-submit">
+                        <br/>
                         Thank you for contacting Russell Monteith CPA PLLC. Your message has been successfully sent. Russell will respond to you as soon as possible. Thank you for your interest.
+                        <ContactHomePageLink props={props.homepagelink} />
                         </div>
                         <br/>
                         <br/>
-                        <div id="container-contact-info">
-                        <p>E: <a href={`mailto:${username}@${hostname}`}>{username}@{hostname}</a>
                         <br/>
-                        T: <a href={`tel:${firstnum}${secondnum}`}>{firstnum}{secondnum}</a>
-                        </p>
-                        </div>
+                        <ContactInfo />
+                        {props.logo ? <img id="homepage-logo-img" src="homepagelogoimage.png" alt="Home Page Logo" /> : ""}
                     </div>
             </div>
          );
