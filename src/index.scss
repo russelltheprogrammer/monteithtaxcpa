@@ -40,25 +40,26 @@ body{
 }
 
 #navbar-logo-img{
-  width: 30%; 
-  height: 50px; 
+  max-width: 30%; 
+  height: 50px;
+  width: auto;
 }
 
 @media (min-width: 768px) and (max-width: 1024px){
   #navbar-logo-img{
-    display: none;
-    visibility: hidden;
+    max-width: 100%;
   }
 }
 
 #navbar-logo-wordmark{
-  width: 90%; 
+  max-width: 90%; 
   height: 17.5px;
+  width: auto;
   margin-top: 17.5px;
   margin-left: 7px; 
 }
 
-@media (min-width: 768px) and (max-width: 1024px){
+@media (min-width: 768px) and (max-width: 960px){
   #navbar-logo-wordmark{
     display: none;
     visibility: hidden;
@@ -79,7 +80,10 @@ body{
 
 .nav-item > a:hover {
   text-decoration: none;
-  color: blue;
+  color: #105577;
+  box-shadow: 3px 3px 10px black;
+  background: #F8F8F8;
+  padding: 5px;
 }
 
 #container-navbar {
@@ -90,6 +94,19 @@ body{
   color: black;
   font-family: 'Carrois Gothic SC', sans-serif;
   border-bottom: 1px solid black;
+}
+
+@media (min-width: 961px) and (max-width: 1024px){
+  #container-navbar{
+    font-size: 19px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 960px){
+  #container-navbar{
+    font-size: 15px;
+    font-weight: bold;
+  }
 }
 
 .topic-header{
@@ -103,7 +120,7 @@ body{
 .text-blurbs{
   align-items: center;
   margin: 0 auto;
-  padding-top: 5px;
+  padding-top: 10px;
   width: 100%;
 }
 
@@ -112,57 +129,36 @@ body{
 }
 
 #homepage-image{
-  width: 80%;
-  height: 475px;
+  max-width: 80%;
+  height: auto;
+  width: auto;
   border-style: solid;
   border-width: 4px;
   border-color: black;
 }
 
-@media (min-width: 1367px) and (max-width: 1574px){
-  #homepage-image{
-    width: 80%;
-    height: 400px;
-  }
-}
-
-@media (min-width: 1025px) and (max-width: 1366px){
-  #homepage-image{
-    width: 80%;
-    height: 350px;
-  }
-}
-
 @media (max-width: 1024px){
   #homepage-image{
-    width: 100%;
-    height: 300px;
+    max-width: 100%;
   }
 }
 
 #homepage-logo-img{
-  width: 50%;
-  height: 175px;
+  max-width: 50%;
+  height: auto;
+  width: auto;
 }
 
-@media (min-width: 1025px) and (max-width: 1574px){
-  #homepage-logo-img{
-    width: 50%;
-    height: 125px;
-  }
-}
 
 @media (min-width: 481px) and (max-width: 1024px){
   #homepage-logo-img{
-    width: 75%;
-    height: 125px;
+    max-width: 75%;
   }
 }
 
 @media (max-width: 480px){
   #homepage-logo-img{
-    width: 90%;
-    height: 100px;
+    max-width: 90%;
   }
 }
 
@@ -196,8 +192,8 @@ body{
 }
 
 .text-blurbs-content-about{
-text-align: left;
-font-size: 18px;
+  text-align: left;
+  font-size: 18px;
 }
 
 @media (max-width: 768px){
@@ -260,15 +256,16 @@ font-size: 18px;
 }
 
 #container-contact-info{
-font-size: 25px;
-background-color: white;
-border-width: 5px;
-border-color: #105577;
-border-style: groove;
-padding: 20px;
-margin-bottom: 100px;
-margin-left: 25%;
-margin-right: 25%;
+  font-size: 25px;
+  background-color: white;
+  border-width: 3px;
+  border-color: black;
+  border-style: solid;
+  padding: 20px;
+  margin-bottom: 100px;
+  margin-left: 25%;
+  margin-right: 25%;
+  box-shadow: 5px 0 10px black;
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
@@ -295,15 +292,15 @@ margin-right: 25%;
 }
 
 #container-submit{
-padding-top: 15px;
-padding-bottom: 15px;
-background-color:#4C8099;
-color: white;
-border-style: solid;
-border-width: 3px;
-border-color: black;
-margin-left: 20%;
-margin-right: 20%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color:#4C8099;
+  color: white;
+  border-style: solid;
+  border-width: 3px;
+  border-color: black;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
@@ -321,20 +318,20 @@ margin-right: 20%;
 }
 
 .container-recaptcha{
-text-align: center;
-display: inline-block;
+  text-align: center;
+  display: inline-block;
 }
 
 #contact-submit-btn{
-background-color: #105577;
-color: white;
-border-color: black;
-border-radius: 5%;
-border-width: 3px;
+  background-color: #105577;
+  color: white;
+  border-color: black;
+  border-radius: 5%;
+  border-width: 3px;
 }
 
 #contact-message-textarea{
-  width: 70%;
+  width: 83%;
   word-wrap: break-word;
 }
 
@@ -343,10 +340,12 @@ border-width: 3px;
 }
 
 #container-after-submit{
-color: black;
-text-align: center;
-overflow-wrap: break-word;
-font-size: 25px;
+  color: black;
+  text-align: center;
+  overflow-wrap: break-word;
+  font-size: 25px;
+  width: 85%;
+  margin: 0 auto;
 }
 
 #contact-after-submit-error{
