@@ -8,7 +8,7 @@ const Home = () => {
             <div className="text-blurbs">
                 <br/>
                 <h1>Welcome to RUSSELL MONTEITH CPA PLLC</h1>
-                <h4>A digital tax accounting practice</h4>
+                <h3>A digital tax accounting practice</h3>
                 <br/>
                 <img id="homepage-logo-img" src="homepagelogoimage.png" alt="Home Page Logo" />
                 <br/>

@@ -8,7 +8,7 @@ const About = () => {
             </div>
             <div className="container-flex-about">
                 <div>
-                    <img id="about-picture" alt="Professional Picture" />
+                    <img id="about-picture" alt="Russell Headshot" />
                 </div>
                 <div className="text-blurbs-about">
                     <h1>Who is Russell Monteith?</h1>
