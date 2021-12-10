@@ -29,8 +29,8 @@ const About = () => {
                         I also offer web development services. In addition to traditional website services, my financial knowledge makes me 
                         uniquely qualified to help your company develop your own internal accounting, financial, or bookkeeping applications. 
                         There are many areas of a business that can be improved which can save you and
-                        your clients lots of time and I can help you make it happen. See some of my
-                        &#160;<a href="https://github.com/russelltheprogrammer" rel="noreferrer" target="_blank">programming work here</a>. 
+                        your clients lots of time and I can help you make it happen.
+                         See some of my <a href="https://github.com/russelltheprogrammer" rel="noreferrer" target="_blank">programming work here</a>. 
                         I also built this entire website from scratch.
                         <br/>
                         <br/>
