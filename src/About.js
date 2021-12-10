@@ -1,6 +1,5 @@
 const About = () => {
 
-
     return (
         <div>
             <div className="topic-header">
