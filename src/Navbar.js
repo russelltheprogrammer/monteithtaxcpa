@@ -30,7 +30,7 @@ const Navbar = () => {
                     </button>
 
                     <div className={`${isNavCollapsed ? 'collapse' : ''} navbar-collapse`} id="toggleMobileMenu">
-                        <ul className="navbar-nav ms-auto text-center">
+                        <ul id="navbar-list" className="navbar-nav ms-auto text-center">
                             <li className="nav-item">
                                 <Link to="/">Home</Link>
                             </li>
