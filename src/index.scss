@@ -155,7 +155,6 @@ body{
   width: auto;
 }
 
-
 @media (min-width: 481px) and (max-width: 1024px){
   #homepage-logo-img{
     max-width: 75%;
@@ -404,15 +403,15 @@ body{
 }
 
 #contact-after-submit-error{
-    top: 50%;
-    left: 25%;
-    right: 25%;
-    width: 50%;
-    text-align: center;
-    overflow-wrap: break-word;
-    position: absolute;
-    font-size: 25px;
-    color: red;
+  top: 50%;
+  left: 25%;
+  right: 25%;
+  width: 50%;
+  text-align: center;
+  overflow-wrap: break-word;
+  position: absolute;
+  font-size: 25px;
+  color: red;
 }
 
 .gradient-container-bottom{
