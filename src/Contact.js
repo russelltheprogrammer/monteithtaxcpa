@@ -2,7 +2,9 @@ import ReCAPTCHA from "react-google-recaptcha";
 import React, { useState } from "react";
 import ContactInfo from "./ContactInfo";
 import ContactHomePageLink from "./ContactHomePageLink";
-const {REACT_APP_LOCAL_PUBLIC_RECAPTCHA_SITE_KEY} = process.env; //currently local token, need to replace with site token, how to link env?
+
+const {REACT_APP_PUBLIC_RECAPTCHA_SITE_KEY} = process.env; //public key
+const {REACT_APP_SERVERPORT} = process.env;
 
 const Contact = (props) => {
 
@@ -28,7 +30,7 @@ const handleSubmit = async (event) => {
     event.preventDefault();
     if(isVerified){
        setStatus("Sending...");
-       const response = await fetch("http://localhost:3001/contact", {
+       const response = await fetch(`http://monteithtaxcpa.com:${REACT_APP_SERVERPORT}/contact`, {
            method: "POST",
            headers: {
                "Content-Type": "application/json;charset=utf-8",
@@ -92,7 +94,7 @@ const handleSubmit = async (event) => {
                                 <br/>
                                 <ReCAPTCHA 
                                 className="container-recaptcha"
-                                sitekey={REACT_APP_LOCAL_PUBLIC_RECAPTCHA_SITE_KEY} //currently local token, need to replace with site token, how to link env?
+                                sitekey={REACT_APP_PUBLIC_RECAPTCHA_SITE_KEY} //public key
                                 onChange={handleRecaptchaChange}
                                 />
                             </form>
