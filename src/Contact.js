@@ -92,7 +92,12 @@ const handleSubmit = async (event) => {
                                 <button type="submit" disabled={!isVerified} id="contact-submit-btn" className="btn btn-lg">SUBMIT</button>
                                 <br/>
                                 <br/>
-                                <ReCAPTCHA className="container-recaptcha" sitekey={REACT_APP_PUBLIC_RECAPTCHA_SITE_KEY} onChange={handleRecaptchaChange}/>
+                                <ReCAPTCHA 
+                                className="container-recaptcha" 
+                                sitekey={REACT_APP_PUBLIC_RECAPTCHA_SITE_KEY} 
+                                onChange={handleRecaptchaChange}
+                                render="explicit"
+                                />
                             </form>
                             <br/><br/>
                         </div>
