@@ -30,7 +30,7 @@ const handleSubmit = async (event) => {
     event.preventDefault();
     if(isVerified){
        setStatus("Sending...");
-       const response = await fetch(`http://www.monteithtaxcpa.com:${REACT_APP_SERVERPORT}/contact`, {
+       const response = await fetch(`https://monteithtaxcpa.herokuapp.com/:${REACT_APP_SERVERPORT}/contact`, {
            method: "POST",
            headers: {
                "Content-Type": "application/json;charset=utf-8",
