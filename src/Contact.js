@@ -96,7 +96,6 @@ const handleSubmit = async (event) => {
                                 className="container-recaptcha" 
                                 sitekey={REACT_APP_PUBLIC_RECAPTCHA_SITE_KEY} 
                                 onChange={handleRecaptchaChange}
-                                render="explicit"
                                 />
                             </form>
                             <br/><br/>
