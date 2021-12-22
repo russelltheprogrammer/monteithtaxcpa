@@ -3,6 +3,7 @@ const router = express.Router();
 const cors = require("cors");
 const nodemailer = require("nodemailer");
 const dotenv = require('dotenv');
+const path = require('path');
 dotenv.config();
 
 const port = process.env.SERVERPORT;
