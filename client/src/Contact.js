@@ -7,7 +7,7 @@ const {REACT_APP_PUBLIC_RECAPTCHA_SITE_KEY} = process.env;
 
 const Contact = (props) => {
  
-const [isVerified, setIsVerified] = useState(true);
+const [isVerified, setIsVerified] = useState(false);
 const [values, setValues] = useState({
     firstname: '', lastname: '', email: '', phonenumber: '', subject: '', message: ''
 });
