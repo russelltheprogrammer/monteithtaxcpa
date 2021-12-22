@@ -13,7 +13,7 @@ const About = () => {
                     <h1>Who is Russell Monteith?</h1>
                         <p className="text-blurbs-content-about">
                         I am Russell Monteith, a Certified Public Accountant licensed in the State of New York and sole owner of this PLLC. 
-                        I spent the bulk of my prior tax experience working in New York City for a prestigious accounting firm. I treat each client's tax
+                        The bulk of my prior tax experience was working in New York City for a prestigious accounting firm. I treat each client's tax
                         situation as unique and thrive to deliver the utmost care and value as if it was my own.
                         <br/>
                         <br/>
