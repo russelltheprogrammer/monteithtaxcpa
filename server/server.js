@@ -10,6 +10,26 @@ const userName = process.env.USERNAME;
 const password = process.env.PASSWORD;
 const emailService = process.env.EMAILSERVICE;
 
+// const whitelist = ['http://localhost:3000', 'http://localhost:3001', 'https://monteithtaxcpa.herokuapp.com/']
+// const corsOptions = {
+//   origin: function (origin, callback) {
+//     console.log("** Origin of request " + origin)
+//     if (whitelist.indexOf(origin) !== -1 || !origin) {
+//       console.log("Origin acceptable")
+//       callback(null, true)
+//     } else {
+//       console.log("Origin rejected")
+//       callback(new Error('Not allowed by CORS'))
+//     }
+//   }
+// }
+
+// app.use(helmet())
+
+// --> Add this
+
+// app.use(cors(corsOptions));
+
 const app = express();
 app.use(cors());
 app.use(express.json());
@@ -33,7 +53,7 @@ contactEmail.verify((error) => {
     }
 });
 
-router.post("/contact", (req, res) => {
+router.post("/api/", (req, res) => {
     const firstname = req.body.firstname;
     const lastname = req.body.lastname;
     const email = req.body.email;
@@ -44,10 +64,10 @@ router.post("/contact", (req, res) => {
         from: lastname + "," + firstname,
         to: userName,
         subject: subject,
-        html: `<p>Name: ${lastname} , ${firstname}</p>
-               <p>Email: ${email}</p>
-               <p>Phone Number: ${phonenumber}</p>
-               <p>Message: ${message}</p>`,
+        html: `<p><b>Name:</b> ${lastname} , ${firstname}</p>
+               <p><b>Email:</b> ${email}</p>
+               <p><b>Phone Number:</b> ${phonenumber}</p>
+               <p><b>Message:</b> ${message}</p>`,
     };
     contactEmail.sendMail(mail, (error) => {
         if (error) {
@@ -58,3 +78,13 @@ router.post("/contact", (req, res) => {
         }
     });
 });
+
+
+// if (process.env.NODE_ENV === 'production') {
+//     // Serve any static files
+//     app.use(express.static(path.join(__dirname, 'client/build')));
+//   // Handle React routing, return all requests to React app
+//     app.get('*', function(req, res) {
+//       res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
+//     });
+//   }

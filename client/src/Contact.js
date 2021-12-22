@@ -30,7 +30,7 @@ const handleSubmit = async (event) => {
     event.preventDefault();
     if(isVerified){
        setStatus("Sending...");
-       const response = await fetch("/contact", {
+       const response = await fetch("/api", {
            method: "POST",
            headers: {
                "Content-Type": "application/json;charset=utf-8",
