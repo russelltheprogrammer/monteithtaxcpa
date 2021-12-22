@@ -4,7 +4,6 @@ import ContactInfo from "./ContactInfo";
 import ContactHomePageLink from "./ContactHomePageLink";
 
 const {REACT_APP_PUBLIC_RECAPTCHA_SITE_KEY} = process.env;
-const {REACT_APP_SERVERPORT} = process.env;
 
 const Contact = (props) => {
  
@@ -12,7 +11,6 @@ const [isVerified, setIsVerified] = useState(true);
 const [values, setValues] = useState({
     firstname: '', lastname: '', email: '', phonenumber: '', subject: '', message: ''
 });
-const [status, setStatus] = useState("Submit");
 const [contactSubmit, setContactSubmit] = useState(false);
 
 const handleValueChange = (name) => {
@@ -21,15 +19,14 @@ const handleValueChange = (name) => {
     }
 };
 
-// const handleRecaptchaChange = (value) => {
-//     console.log("Captcha value:", value);
-//     setIsVerified(true);
-// };
+const handleRecaptchaChange = (value) => {
+    console.log("Captcha value:", value);
+    setIsVerified(true);
+};
 
 const handleSubmit = async (event) => {
     event.preventDefault();
     if(isVerified){
-       setStatus("Sending...");
        const response = await fetch("/api", {
            method: "POST",
            headers: {
@@ -37,7 +34,6 @@ const handleSubmit = async (event) => {
            },
            body: JSON.stringify(values),
        });
-       setStatus("Submit");
        const result = await response.json();
        alert(result.status);
        setContactSubmit(true);
@@ -92,11 +88,11 @@ const handleSubmit = async (event) => {
                                 <button type="submit" disabled={!isVerified} id="contact-submit-btn" className="btn btn-lg">SUBMIT</button>
                                 <br/>
                                 <br/>
-                                {/* <ReCAPTCHA 
+                                <ReCAPTCHA 
                                 className="container-recaptcha" 
                                 sitekey={REACT_APP_PUBLIC_RECAPTCHA_SITE_KEY} 
                                 onChange={handleRecaptchaChange}
-                                /> */}
+                                />
                             </form>
                             <br/><br/>
                         </div>
