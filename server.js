@@ -10,7 +10,6 @@ const userName = process.env.USERNAME;
 const clientIdCode = process.env.CLIENTIDCODE;
 const clientSecretCode = process.env.CLIENTSECRETCODE;
 const refreshTokenCode = process.env.REFRESHTOKENCODE;
-const accessTokenCode = process.env.ACCESSTOKENCODE;
 
 
 const app = express();
@@ -29,8 +28,7 @@ const contactEmail = nodemailer.createTransport({
         user: userName,
         clientId: clientIdCode,
         clientSecret: clientSecretCode,
-        refreshToken: refreshTokenCode,
-        accessToken: accessTokenCode
+        refreshToken: refreshTokenCode
     },
 });
 
