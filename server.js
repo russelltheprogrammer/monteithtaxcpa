@@ -28,7 +28,9 @@ const contactEmail = nodemailer.createTransport({
         type: 'OAuth2',
         user: userName,
         clientId: clientIdCode,
-        clientSecret: clientSecretCode
+        clientSecret: clientSecretCode,
+        refreshToken: refreshTokenCode,
+        accessToken: accessTokenCode
     },
 });
 
