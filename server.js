@@ -7,7 +7,6 @@ const path = require('path');
 dotenv.config();
 
 const userName = process.env.USERNAME;
-const emailService = process.env.EMAILSERVICE;
 const clientIdCode = process.env.CLIENTIDCODE;
 const clientSecretCode = process.env.CLIENTSECRETCODE;
 const refreshTokenCode = process.env.REFRESHTOKENCODE;
@@ -22,7 +21,7 @@ app.listen(process.env.PORT || 3001, () => console.log("Server Running"));
  
 
 const contactEmail = nodemailer.createTransport({
-    host: emailService,
+    host: 'smtp.gmail.com',
     port: 465,
     secure: true,
     auth: {
