@@ -8,7 +8,6 @@ I used ```create-react-app```.
 
 ## Key Concepts Used
 
-+ Fetch API
 + React hooks
 + React components
 + React Routers
