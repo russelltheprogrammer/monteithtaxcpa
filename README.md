@@ -12,7 +12,7 @@ I used ```create-react-app```.
 + React components
 + React Routers
 + Custom Functions
-+ Handle ButtonClick/OnChange Functions
++ Handle onClick and onChange Functions
 + Sass
 + Bootstrap
 + Google ReCaptcha
