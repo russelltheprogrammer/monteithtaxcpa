@@ -59,7 +59,7 @@ router.post("/api/", (req, res) => {
     };
     contactEmail.sendMail(mail, (error) => {
         if (error) {
-            res.json({ status: "ERROR"});
+            res.json({ status: "ERROR, please contact the site administrator"});
         }
         else {
             res.json({ status: "Message Sent" });
