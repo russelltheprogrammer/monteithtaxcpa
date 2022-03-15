@@ -1,0 +1,21 @@
+// Will Google Email continue to work with Contact Form? Might need to revisit.
+
+// Is my redirect safe? Is it only safe on the heroku app? Is it safe when the main domain is forwarded?
+
+// Should I mess around with the domain name and use a DNS with the heroku app to use the main domain name 
+// or should I continue to use redirect?
+
+// image of a business card as contact card in contact section?
+// images of NYC from unsplash, could have one or two more scattered about on different pages in small sizes or a nice little grid
+
+
+Completed, future notes
+// Contact info, make email and phone numbers not trackable by bots - I added variables and then concatenated the strings, there is probably a better method but I hope this decreases spam bots by a little
+// CONTACT We want to shield the URL from bots, but still make it clickable. Here's one way to do it. https://stackoverflow.com/questions/3624667/how-to-spamproof-a-mailto-link
+
+// Left justify text in contact form for labels -I tried but could not figure out how to do this. I decided to pass because it was not worth the reward for the effort.
+
+// In the future, add a Development Projects page or a separate site for your programming work.
+
+// Change website to separate FrontEnd and BackEnd. BackEnd can be hosted on Heroku for free but you need to pay to use your own website name with a SSL
+certificate. Github you can host FrontEnd for free and I believe get a SSL certificate for free as well. Then I could make API calls to the backend.
