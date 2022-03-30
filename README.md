@@ -1,4 +1,4 @@
-# Link to monteithtaxcpa website --> [monteithtaxcpa.com](www.monteithtaxcpa.com)
+# Link to monteithtaxcpa website --> [monteithtaxcpa.com](https://monteithtaxcpa.herokuapp.com/)
 
 Note: This project was done for my side business' website. It used numerous concepts and was used not only as a marketing page but as a web development learning experience too.
 
