@@ -1,4 +1,5 @@
-# Link to monteithtaxcpa website --> [monteithtaxcpa.com](https://monteithtaxcpa.herokuapp.com/)
+# This project was moved to a new hosting platform and rebuilt with Next.js, see
+# new link and information via the new repo --> [monteithtaxcpanext](https://github.com/russelltheprogrammer/monteithtaxcpanext)
 
 Note: This project was done for my side business' website. It used numerous concepts and was used not only as a marketing page but as a web development learning experience too.
 
